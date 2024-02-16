@@ -1,0 +1,8 @@
+> shape <- 2
+> scale <- 1
+> time_points <- seq(0, 5, by = 0.1)
+> reliability <- 1 - pweibull(time_points, shape = shape, scale = scale)
+> plot(time_points, reliability, type = "l", col = "blue",
++      xlab = "Time", ylab = "Reliability",
+> grid()
+> 
